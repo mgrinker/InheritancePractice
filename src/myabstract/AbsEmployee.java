@@ -69,5 +69,5 @@ public abstract class AbsEmployee {
         return str;
     }
     
-    public abstract int hoursWorked();
+    public abstract int getHoursWorked();
 }
