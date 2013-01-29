@@ -15,6 +15,20 @@ public class SalariedEmployee extends Employee{
         super(firstName, lastName, hoursWorked, badgeID);
         this.annualSalary = annualSalary;
     }
+
+    /**
+     * @return the annualSalary
+     */
+    public double getAnnualSalary() {
+        return annualSalary;
+    }
+
+    /**
+     * @param annualSalary the annualSalary to set
+     */
+    public void setAnnualSalary(double annualSalary) {
+        this.annualSalary = annualSalary;
+    }
     
     
 }

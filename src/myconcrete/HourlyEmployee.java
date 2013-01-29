@@ -15,6 +15,20 @@ public class HourlyEmployee extends Employee{
         super(firstName, lastName, hoursWorked, badgeID);
         this.hourlyRate = hourlyRate;
     }
+
+    /**
+     * @return the hourlyRate
+     */
+    public double getHourlyRate() {
+        return hourlyRate;
+    }
+
+    /**
+     * @param hourlyRate the hourlyRate to set
+     */
+    public void setHourlyRate(double hourlyRate) {
+        this.hourlyRate = hourlyRate;
+    }
     
     
     

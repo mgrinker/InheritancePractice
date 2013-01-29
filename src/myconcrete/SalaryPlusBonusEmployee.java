@@ -15,6 +15,20 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee{
         super(annualSalary, firstName, lastName, hoursWorked, badgeID);
         this.annualBonus = annualBonus;
     }
+
+    /**
+     * @return the annualBonus
+     */
+    public double getAnnualBonus() {
+        return annualBonus;
+    }
+
+    /**
+     * @param annualBonus the annualBonus to set
+     */
+    public void setAnnualBonus(double annualBonus) {
+        this.annualBonus = annualBonus;
+    }
     
     
     
