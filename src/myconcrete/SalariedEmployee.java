@@ -30,5 +30,5 @@ public class SalariedEmployee extends Employee{
         this.annualSalary = annualSalary;
     }
     
-    
+        
 }

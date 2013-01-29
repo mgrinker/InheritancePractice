@@ -35,10 +35,12 @@ public class HourlyEmployee extends Employee{
         return hourlyRate * super.getHoursWorked();
     }
     
+    @Override
     public String toString() {
         String str;
         
-        str = "Hourly Rate: " + hourlyRate
+        str = super.toString() + 
+                "Hourly Rate: " + hourlyRate
                 + "\nGross Pay: " + grossPay;
         
         return str;
