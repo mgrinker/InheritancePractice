@@ -10,6 +10,7 @@ package myconcrete;
  */
 public class HourlyEmployee extends Employee{
     private double hourlyRate;
+    private double grossPay;
 
     public HourlyEmployee(double hourlyRate, String firstName, String lastName, int hoursWorked, String badgeID) {
         super(firstName, lastName, hoursWorked, badgeID);
@@ -30,6 +31,16 @@ public class HourlyEmployee extends Employee{
         this.hourlyRate = hourlyRate;
     }
     
+    public double getGrossPay() {
+        return hourlyRate * super.getHoursWorked();
+    }
     
-    
+    public String toString() {
+        String str;
+        
+        str = "Hourly Rate: " + hourlyRate
+                + "\nGross Pay: " + grossPay;
+        
+        return str;
+    }
 }
