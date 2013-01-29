@@ -74,6 +74,16 @@ public class Employee {
         this.badgeID = badgeID;
     }
     
+    public String toString(){
+        String str;
+        
+        str = "Name: " + firstName + " " + lastName
+                + "\nID Number: " + badgeID
+                + "Hours Worked: " + hoursWorked;
+        
+        return str;
+    }
+    
     
     
 }
