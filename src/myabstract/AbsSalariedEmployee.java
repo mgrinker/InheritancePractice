@@ -12,11 +12,12 @@ public class AbsSalariedEmployee extends AbsEmployee {
     private double annualSalary;
     private int hoursWorked;
 
-    public AbsSalariedEmployee(double annualSalary, int hoursWorked, String firstName, String lastName, String badgeID) {
+    public AbsSalariedEmployee(double annualSalary, String firstName, String lastName, String badgeID) {
         super(firstName, lastName, badgeID);
         this.annualSalary = annualSalary;
-        this.hoursWorked = hoursWorked;
     }
+
+    
 
     /**
      * @return the annualSalary
