@@ -67,6 +67,32 @@ public class AbsStartUp {
         System.out.println("Annual salary: " + sal_1.getAnnualSalary());
         System.out.println();
         
+        //Create SalaryPlusBonus object
+        //Get info and display
         
+        System.out.println();
+        keyboard.nextLine();
+        System.out.println("You are going to enter the info for a salaried "
+                + "employee plus their bonus");
+        System.out.print("What is the first name of the employee? ");
+        fName = keyboard.nextLine();
+        System.out.print("What is the last name of the employee? ");
+        lName = keyboard.nextLine();
+        System.out.print("What is the employee ID? ");
+        empID = keyboard.nextLine();
+        System.out.print("How many hours did the employee work? ");
+        hours = keyboard.nextInt();
+        System.out.print("What is the annual salary for this employee? ");
+        salary = keyboard.nextDouble();
+        System.out.print("What is the annual bonus for this employee? ");
+        bonus = keyboard.nextDouble();
+        System.out.println();
+        AbsSalaryPlusBonusEmployee salBonus_1 = new AbsSalaryPlusBonusEmployee(bonus, 
+                salary,fName, lName, empID);
+        System.out.println(salBonus_1);
+        System.out.println("Annual salary: " + salBonus_1.getAnnualSalary());
+        System.out.println("Annual bonus: " + salBonus_1.getAnnualBonus());
+        System.out.println();
+
     }
 }

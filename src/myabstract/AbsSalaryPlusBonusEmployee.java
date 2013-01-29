@@ -8,15 +8,16 @@ package myabstract;
  *
  * @author Michael
  */
-public class AbsSalaryPlusBonusEmployee extends AbsEmployee {
+public class AbsSalaryPlusBonusEmployee extends AbsSalariedEmployee {
     private double annualBonus;
     private int hoursWorked;
 
-    public AbsSalaryPlusBonusEmployee(double annualBonus, int hoursWorked, String firstName, String lastName, String badgeID) {
-        super(firstName, lastName, badgeID);
+    public AbsSalaryPlusBonusEmployee(double annualBonus, double annualSalary, String firstName, String lastName, String badgeID) {
+        super(annualSalary, firstName, lastName, badgeID);
         this.annualBonus = annualBonus;
-        this.hoursWorked = hoursWorked;
     }
+
+    
 
     /**
      * @return the annualBonus
