@@ -17,7 +17,7 @@ public class Employee {
         this.hoursWorked = hoursWorked;
         this.badgeID = badgeID;
     }
-
+    
     /**
      * @return the firstName
      */
