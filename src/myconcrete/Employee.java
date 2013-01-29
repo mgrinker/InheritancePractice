@@ -79,7 +79,7 @@ public class Employee {
         
         str = "Name: " + firstName + " " + lastName
                 + "\nID Number: " + badgeID
-                + "Hours Worked: " + hoursWorked;
+                + "\nHours Worked: " + hoursWorked;
         
         return str;
     }

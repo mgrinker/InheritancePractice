@@ -31,16 +31,16 @@ public class HourlyEmployee extends Employee{
         this.hourlyRate = hourlyRate;
     }
     
-    public double getGrossPay() {
-        return hourlyRate * super.getHoursWorked();
+    public void pay() {
+        grossPay = hourlyRate * super.getHoursWorked();
     }
     
     @Override
     public String toString() {
         String str;
         
-        str = super.toString() + 
-                "Hourly Rate: " + hourlyRate
+        str = super.toString()
+                + "\nHourly Rate: " + hourlyRate
                 + "\nGross Pay: " + grossPay;
         
         return str;

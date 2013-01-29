@@ -35,7 +35,7 @@ public class StartUp {
         hrRate = keyboard.nextDouble();
         
         HourlyEmployee emp1 = new HourlyEmployee(hrRate, fName, lName, hours, empID);
-        
+        emp1.pay();
         System.out.println(emp1);
         
         
