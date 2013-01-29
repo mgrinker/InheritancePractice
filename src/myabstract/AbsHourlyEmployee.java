@@ -13,12 +13,12 @@ public class AbsHourlyEmployee extends AbsEmployee{
     private double grossPay;
     private int hoursWorked;
 
-    public AbsHourlyEmployee(double hourlyRate, double grossPay, int hoursWorked, String firstName, String lastName, String badgeID) {
+    public AbsHourlyEmployee(double hourlyRate, String firstName, String lastName, String badgeID) {
         super(firstName, lastName, badgeID);
         this.hourlyRate = hourlyRate;
-        this.grossPay = grossPay;
-        this.hoursWorked = hoursWorked;
     }
+
+    
 
     /**
      * @return the hourlyRate
@@ -47,6 +47,13 @@ public class AbsHourlyEmployee extends AbsEmployee{
                 + "\nGross Pay: " + grossPay;
         
         return str;
+    }
+    
+    /**
+     * @param hoursWorked the hourlyRate to set
+     */
+    public void setHoursWorked(int hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
     
     @Override
